@@ -33,7 +33,6 @@ WARNING!!! WARNING!!!
 // Wrap the entire contents of script.js inside of an IIFE
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
-
 (function(){
 
 
@@ -59,9 +58,9 @@ for (let i = 0; i < names.length; i++ ){
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
    if (firstLetter === 'j') {
-      console.log("byeSpeaker " + names[i])
+      console.log(byeSpeaker.speak() + names[i])
   } else {
-    console.log("helloSpeaker "+ names[i])
+    console.log(helloSpeaker.speak() + names[i])
    }
 }
 })()
